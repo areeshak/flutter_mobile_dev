@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'Basic Widgets/list_view1.dart';
 import 'Basic Widgets/controller2.dart';
+import 'Mini Projects/login3.dart';
+import 'Basic Widgets/reusable_widget4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,9 +18,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
+        primarySwatch: Colors.teal,
       ),
-      home: const ControllerPage(),
+      home: const LoginPage(),
     );
   }
 }
