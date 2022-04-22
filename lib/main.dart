@@ -4,6 +4,7 @@ import 'Basic Widgets/list_view1.dart';
 import 'Basic Widgets/controller2.dart';
 import 'Mini Projects/login3.dart';
 import 'Basic Widgets/reusable_widget4.dart';
+import 'Basic Widgets/navigation5/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const LoginPage(),
+      home: const NavigationMainScreenPage(),
     );
   }
 }
