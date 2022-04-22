@@ -1,7 +1,12 @@
 class Profile {
+
+  final String initials;
   final String name;
   final String email;
 
-  //Profile(this.name, this.email);
-  Profile({required this.name, required this.email});
+  Profile({
+    required this.initials,
+    required this.name,
+    required this.email,
+  });
 }

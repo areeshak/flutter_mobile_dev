@@ -23,6 +23,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
+              widget.profile.initials,
+              style: Theme.of(context).textTheme.headline2,
+            ),
+            Text(
               widget.profile.name,
               style: Theme.of(context).textTheme.headline4,
             ),

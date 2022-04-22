@@ -40,7 +40,7 @@ class _NavigationMainScreenPageState extends State<NavigationMainScreenPage> {
             ),
             const Padding(padding: EdgeInsets.all(8)),
             ElevatedButton(onPressed: (){
-              var profile = Profile(name: "Areesha Kashif", email: "ahdfd@gmail.com");
+              var profile = Profile(initials:'AK', name: "Areesha Kashif", email: "ahdfd@gmail.com");
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) => ProfileScreen(                                //navigate to profile screen
