@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobile_dev/Mini%20Projects/navigation6/contacts_list.dart';
 
 import 'Basic Widgets/list_view1.dart';
 import 'Basic Widgets/controller2.dart';
 import 'Mini Projects/login3.dart';
 import 'Basic Widgets/reusable_widget4.dart';
 import 'Basic Widgets/navigation5/main_screen.dart';
+import 'Mini Projects/navigation6/contacts_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const NavigationMainScreenPage(),
+      home: const ContactsListPage(),
     );
   }
 }
