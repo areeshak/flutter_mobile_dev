@@ -7,6 +7,7 @@ import 'Mini Projects/login3.dart';
 import 'Basic Widgets/reusable_widget4.dart';
 import 'Basic Widgets/navigation5/main_screen.dart';
 import 'Mini Projects/navigation6/contacts_list.dart';
+import 'Basic Widgets/callback7/display_value.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const ContactsListPage(),
+      home: const DisplayValuePage(),
     );
   }
 }
