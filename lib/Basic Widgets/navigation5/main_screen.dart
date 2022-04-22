@@ -1,3 +1,5 @@
+//pass name and email (Profile) data from main screen to profile screen
+
 import 'package:flutter/material.dart';
 
 import 'profile_screen.dart';
