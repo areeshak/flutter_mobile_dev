@@ -9,6 +9,7 @@ import 'Basic Widgets/navigation5/main_screen.dart';
 import 'Mini Projects/navigation6/contacts_list.dart';
 import 'Basic Widgets/callback7/display_value.dart';
 import 'Basic Widgets/api_http8.dart';
+import 'Mini Projects/cart9/dishes_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const HttpUsersPage(),
+      home: const DishesListPage(),
     );
   }
 }
