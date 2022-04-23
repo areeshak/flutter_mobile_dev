@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mobile_dev/Mini%20Projects/navigation6/contacts_list.dart';
+import 'package:flutter_mobile_dev/Basic%20Widgets/state_management_provider11/counter.dart';
+import 'package:provider/provider.dart';
 
 import 'Basic Widgets/list_view1.dart';
 import 'Basic Widgets/controller2.dart';
@@ -11,8 +12,16 @@ import 'Basic Widgets/callback7/display_value.dart';
 import 'Basic Widgets/api_http8.dart';
 import 'Mini Projects/cart9/dishes_list.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'Basic Widgets/state_management_provider11/counter_provider.dart';
+
+void main()
+{
+  runApp(                                                                   //singleton class
+    ChangeNotifierProvider(
+      create: (_) => CounterProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -26,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const DishesListPage(),
+      home: const CounterPageWithProvider(),
     );
   }
 }
