@@ -14,7 +14,7 @@ import 'Mini Projects/cart9/dishes_list.dart';
 import 'Basic Widgets/state_management_provider11/counter_provider.dart';
 import 'Basic Widgets/state_management_provider11/counter.dart';
 import 'Basic Widgets/firebase_users12.dart';
-import 'Basic Widgets/google_authentication12/signIn.dart';
+import 'Basic Widgets/google_authentication13/signIn.dart';
 import 'Basic Widgets/animation13.dart';
 
 
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const AnimationPage(),
+      home: const SignInPage(),
     );
   }
 }
