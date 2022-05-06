@@ -15,6 +15,7 @@ import 'Basic Widgets/state_management_provider11/counter_provider.dart';
 import 'Basic Widgets/state_management_provider11/counter.dart';
 import 'Basic Widgets/firebase_users12.dart';
 import 'Basic Widgets/google_authentication13/signIn.dart';
+import 'Basic Widgets/animation14.dart';
 
 
 void main() async {
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
-      home: const SignInPage(),
+      home: const AnimationPage(),
     );
   }
 }
