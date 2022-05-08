@@ -1,17 +1,13 @@
 class UserModel {
-  //now user name from database is coming as first name as last name
-  final String firstName;
-  final String lastName;
+  final String name;
 
   UserModel({
-    required this.firstName,
-    required this.lastName,
+    required this.name
   });
 
-  static fromJson(Map<String, dynamic> json) {                                  //json(map) from outside will convert here and will return user model object
+  static fromJson(Map<String, dynamic> json) {
     return UserModel(
-      firstName: json['firstName'],
-      lastName: json['lastName'],
+      name: json['name'],
     );
   }
 }
