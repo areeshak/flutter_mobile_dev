@@ -1,8 +1,8 @@
+//***ARCHITECTURE LOGIC ONLY ***
 import 'dart:convert';
 import '../entities/user.dart';
 import '../models/user_model.dart';
 import '../network_layer/network_call.dart';
-import 'package:http/http.dart' as http;
 
 class MainProvider{                 //controller
   int counter = 0;
@@ -35,10 +35,7 @@ class MainProvider{                 //controller
 
   Future<List<User>>  getUsers() async{
 
-    var url = Uri.parse('https://jsonplaceholder.typicode.com/users');
-    var response = await http.get(url);
-    print('Response status: ${response.statusCode}');
-    print('Response body: ${response.body}');
+    var response = NetworkCall.get('https://jsonplaceholder.typicode.com/users');
 
     var list = jsonDecode(response.body) as List;                                //decode
 

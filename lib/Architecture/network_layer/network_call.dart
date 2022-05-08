@@ -9,6 +9,4 @@ class NetworkCall {
     print('Response body: ${response.body}');
     return response.body;
   }
-
-
 }

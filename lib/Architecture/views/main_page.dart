@@ -1,3 +1,4 @@
+//***ARCHITECTURE LOGIC ONLY ***
 import 'package:flutter/material.dart';
 import '../controller/main_provider.dart';
 
